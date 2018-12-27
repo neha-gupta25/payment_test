@@ -1,0 +1,7 @@
+<h2>Generate Ticket</h2>
+<br>
+<%= simple_form_for @ticket, url: tickets_path, method: :post do |f|  %>
+  <%= f.input :amount_received, label: "Amount Received", placeholder: "" %>
+  <%= f.input :amount_withdrawl, label: "Amount withdrawl", placeholder: "" %>
+  <%= f.submit "Submit", class: "btn btn-success" %>
+<% end %>
